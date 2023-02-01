@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма регистрации</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #000;
+        background-color: #f8f8f8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .form {
+        max-width: 320px;
+        padding: 15px;
+        margin: 20px auto;
+        background-color: #fff;
+      }
+
+      .input {
+        display: block;
+        width: 100%;
+        padding: 8px 10px;
+        margin-bottom: 10px;
+
+        border: 1px solid #ccc;
+
+        font-family: inherit;
+        font-size: 16px;
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 8px 10px;
+
+        border: 0;
+        background-color: #1cbc11;
+        cursor: pointer;
+
+        font-family: inherit;
+        font-size: 16px;
+        color: #fff;
+      }
+
+      .btn:hover {
+        background-color: #14a20a;
+      }
+
+      #errorMessage {
+        height: 50px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form" action="" method="post">
+      <input class="input" type="text" id="name" placeholder="Ваше имя" />
+      <input class="input" type="email" id="email" placeholder="Ваш e-mail" />
+      <input class="input" type="tel" id="tel" placeholder="Ваш телефон" />
+      <input class="input" type="password" id="password" placeholder="Пароль" />
+      <input
+        class="input"
+        type="password"
+        id="password"
+        placeholder="Повторите пароль"
+      />
+      <div id="errorMessage"></div>
+      <button class="btn" type="button" onClick="check()">Регистрация</button>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
